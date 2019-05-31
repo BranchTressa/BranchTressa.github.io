@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+  <head>
+    <title>magic 8 ball!</title>
+    <style>
+    #grid
+        {
+        display: grid;
+        grid-template-rows: 1fr 2fr 2fr 1fr;
+        grid-template-columns: 1fr 2fr;
+        height: 100vh;
+        }
+      #top
+      {
+        grid-column: span 2;
+        font-size:40px;
+        background-color: black;
+        border:10px solid Blue;
+        text-align:center;
+        color: white;
+        padding: 50px;
+        font-family:"courier";
+      }
+      #left
+      {
+        border: 5px;
+        background-color: white;
+        grid-row: span 2;
+        font-size: 2rem;
+        padding: 5px 20px;
+        padding-top: 17px;
+      }
+      #main
+      {
+        border:10px;
+        background-color: black;
+        padding-top: 10%;
+      }
+      #result
+      {
+        border:10px solid black;
+        background-color: Blue;
+        font-size: 5rem;
+        color: white;
+        font-family: "Helvetica";
+      }
+      #bottom
+      {
+        border:10px solid blue;
+        grid-column: span 2;
+        background-color: black;
+        font-size: 3rem;
+        padding-top: 50px;
+      }
+
+      button
+      {
+        width:300px;
+        height:100px;
+        background-color: lightblue;
+        border-radius: 25px;
+        color: black;
+        font-size: 25px;
+        font-family: "Helvetica";
+      }
+
+      input
+      {
+        width: 500px;
+        height: 100px;
+        margin-bottom: 10px;
+        font-size: 50px;
+
+      }
+
+ </style>
+  </head>
+  <body style="text-align: center; color: Black;">
+    <div id="grid">
+      <div id="top">
+         Welcome To The Magic 8 Ball! :)
+      <h1 style="font-family:courier; color:white; font-size:25px; text-align: center;">
+        Ask Magic 8 ball a question!
+      </h1>
+      </div>
+     <div id = "left">
+  <img style= "padding:0 15px; float: left;"src="8ball.jpg"height= "100%" >
+     </div>
+  <div id = "main" class="text-block">
+    <input type= "text" id="guessInput" />
+    <br />
+    <button onclick= "answer()" id= "clickHere">Click here for your answer!
+  </div>
+  <div id = "result"></div>
+  <div id= "bottom"></div>
+</div>
+   <script src="sketch.js"></script>
+  </body>
+</html>
+<body>
+</div>
+</body>
+</html>
